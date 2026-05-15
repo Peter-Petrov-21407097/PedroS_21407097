@@ -11,8 +11,12 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.core.management import call_command
 from django.http import HttpResponse
 import io
-
-
+from .forms import (
+    TecnologiaForm,
+    CompetenciaForm,
+    FormacaoForm,
+    ProjetoForm
+)
 from .models import (
     Licenciatura,
     UnidadeCurricular,
