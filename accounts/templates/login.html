@@ -1,0 +1,20 @@
+<h1>Login</h1>
+
+{% if erro %}
+<p>{{ erro }}</p>
+{% endif %}
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Entrar</button>
+</form>
+
+<hr>
+
+<p>Ou entra com link mágico:</p>
+
+<a href="{% url 'accounts:magic_link' %}">
+    Receber link mágico por email
+</a>

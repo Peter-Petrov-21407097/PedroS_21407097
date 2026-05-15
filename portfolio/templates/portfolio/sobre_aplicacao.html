@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre esta Aplicação</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+</head>
+
+<body>
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <h2>Sobre esta Aplicação</h2>
+            <p>Portfólio - V1.2</p>
+        </div>
+
+        <nav class="menu">
+            <a href="{% url 'home' %}">⬅ RETROCEDER</a>
+
+            <a href="#modelacao">Modelação</a>
+            <a href="#tecnologias-aplicacao">Tecnologias da Aplicação</a>
+            <a href="#estrutura-paginas">Estrutura das Páginas</a>
+            <a href="#github">GitHub</a>
+            <a href="#making-of-aplicacao">Making-Of</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <section id="modelacao">
+            <h1>Portfólio - V1.2</h1>
+
+            <h2>Arquitetura Model View Template</h2>
+
+            <p>
+                Esta aplicação foi desenvolvida com Django e segue a arquitetura
+                Model-View-Template (MVT). O objetivo foi aplicar os conhecimentos
+                adquiridos nas aulas e também conhecimentos externos para construir
+                um portfólio completo e funcional.
+            </p>
+
+            <img src="/media/projetos/web_scraping.png" style="max-width:100%;">
+
+            <h2>Modelação</h2>
+
+            <p>
+                O modelo de dados foi desenhado para representar as várias componentes
+                do portfólio, incluindo licenciaturas, unidades curriculares,
+                projetos, tecnologias, competências e outros elementos.
+            </p>
+
+            <img src="/media/midia/diagrama.jpg" style="max-width:100%;">
+
+            <p>
+                A modelação foi implementada no ficheiro <strong>models.py</strong>,
+                utilizando classes Django. Cada classe corresponde a uma tabela na
+                base de dados e define as relações entre os diferentes elementos.
+            </p>
+        </section>
+
+        <section id="tecnologias-aplicacao">
+            <h2>Tecnologias da Aplicação</h2>
+
+            <p>
+                Foram utilizadas várias tecnologias no desenvolvimento desta aplicação.
+            </p>
+
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS</li>
+                <li><strong>Backend:</strong> Python, Django</li>
+                <li><strong>Base de dados:</strong> SQLite</li>
+                <li><strong>Outros:</strong> Git, GitHub, Codespaces</li>
+            </ul>
+        </section>
+
+        <section id="estrutura-paginas">
+            <h2>Estrutura das Páginas</h2>
+
+            <p>
+                A aplicação está organizada numa página principal com várias secções
+                e páginas secundárias para gestão de conteúdos.
+            </p>
+
+<pre>
+Home
+ ├── Licenciaturas
+ ├── Unidades Curriculares
+ ├── Projetos
+ ├── Tecnologias
+ ├── Competências
+ ├── Formações
+ └── Sobre esta Aplicação
+</pre>
+        </section>
+
+        <section id="github">
+            <h2>GitHub</h2>
+
+            <p>
+                O repositório do projeto encontra-se disponível online:
+            </p>
+
+            <a href="https://github.com/Peter-Petrov-21407097/Portofolio1.2" target="_blank">
+                Ver no GitHub
+            </a>
+
+            <p>
+                O GitHub foi utilizado para controlo de versões, armazenamento do
+                código e acompanhamento da evolução do projeto.
+            </p>
+        </section>
+
+        <section id="making-of-aplicacao">
+            <h2>Making-Of</h2>
+
+            <p>
+                O Making-Of documenta todo o processo de desenvolvimento do projeto,
+                incluindo dificuldades, decisões e melhorias ao longo do tempo.
+            </p>
+
+            <a href="{% url 'home' %}#makingof">Ver Making Of</a>
+        </section>
+
+    </main>
+</div>
+</body>
+</html>

@@ -137,3 +137,12 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+
+# Django local files
+db.sqlite3
+media/
+staticfiles/
+
+# macOS
+.DS_Store

@@ -1,0 +1,27 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+{% if not is_gestor %}
+    <p class="text-danger text-center mt-5">Não tens permissão para aceder a esta página.</p>
+{% else %}
+
+<div class="container mt-5">
+    <div class="card shadow p-4">
+
+        <h2 class="mb-4">Projeto</h2>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a href="{% url 'lista_projetos' %}" class="btn btn-secondary">Cancelar</a>
+        </form>
+
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}

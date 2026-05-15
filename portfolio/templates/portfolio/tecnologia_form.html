@@ -1,0 +1,30 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+{% if not is_gestor %}
+    <p class="text-danger text-center mt-5">Não tens permissão para aceder a esta página.</p>
+{% else %}
+
+<section class="container mt-5">
+    <div class="card bg-dark text-light border-secondary shadow p-4">
+        <h1 class="mb-4">Tecnologia</h1>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit" class="btn btn-success">
+                Guardar
+            </button>
+
+            <a href="{% url 'lista_tecnologias' %}" class="btn btn-secondary">
+                Cancelar
+            </a>
+        </form>
+    </div>
+</section>
+
+{% endif %}
+
+{% endblock %}
