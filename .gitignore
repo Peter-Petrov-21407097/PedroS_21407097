@@ -131,12 +131,7 @@ Control.system-ca-bundle
 GitHub.sublime-settings 
 
 # Visual Studio Code # 
-.vscode/* 
-!.vscode/settings.json 
-!.vscode/tasks.json 
-!.vscode/launch.json 
-!.vscode/extensions.json 
-.history
+.vscode/
 
 
 # Django local files
@@ -146,3 +141,29 @@ staticfiles/
 
 # macOS
 .DS_Store
+
+# Local database
+db.sqlite3
+
+# Uploaded media
+media/
+
+# Collected static files
+staticfiles/
+
+# Docker / local overrides
+docker-compose.override.yml
+
+# Temporary JSON recovery files
+dados_corrompido.json
+dados_corrigido.json
+dados_fixed.json
+dados_clean.json
+dados_final.json
+
+# Python cache
+*.pyo
+
+# Windows
+Thumbs.db
+desktop.ini
