@@ -53,8 +53,9 @@ jobs:
             docker stop ${{ env.STUDENT_ID }} || true
             docker rm ${{ env.STUDENT_ID }} || true
 
-            echo "Running new container for {{ env.STUDENT_ID }}"
+            echo "Running new container for ${{ env.STUDENT_ID }}"
             docker run -d --name ${{ env.STUDENT_ID }} --network vm-pw_pw-network --expose 3000 ghcr.io/${{ env.REPOSITORY }}/${{ github.event.repository.name }}:latest
 
             sleep 15
+            docker ps -a
             docker logs ${{ env.STUDENT_ID }}
