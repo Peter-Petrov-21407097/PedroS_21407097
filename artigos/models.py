@@ -25,3 +25,17 @@ class Comentario(models.Model):
 
     def __str__(self):
         return f"Comentário de {self.autor.username}"
+
+class Rating(models.Model):
+    artigo = models.ForeignKey(
+        Artigo,
+        on_delete=models.CASCADE,
+        related_name='ratings'
+    )
+
+    valor = models.IntegerField()
+
+    criado_em = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.artigo} - {self.valor}'
