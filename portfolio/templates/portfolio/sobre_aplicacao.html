@@ -25,6 +25,7 @@
             <a href="#estrutura-paginas">Estrutura das Páginas</a>
             <a href="#github">GitHub</a>
             <a href="#making-of-aplicacao">Making-Of</a>
+            <a href="#video-tutoriais">Vídeo Tutoriais</a>
         </nav>
     </aside>
 
@@ -42,8 +43,8 @@
                 um portfólio completo e funcional.
             </p>
 
-        <img src="https://res.cloudinary.com/dxnc9l5cn/image/upload/v1/media/midia/MVT_oqqg22"
-            style="max-width:100%;">
+            <img src="https://res.cloudinary.com/dxnc9l5cn/image/upload/v1/media/midia/MVT_oqqg22"
+                 style="max-width:100%;">
 
             <h2>Modelação</h2>
 
@@ -52,9 +53,10 @@
                 do portfólio, incluindo licenciaturas, unidades curriculares,
                 projetos, tecnologias, competências e outros elementos.
             </p>
-        <img src="https://res.cloudinary.com/dxnc9l5cn/image/upload/v1/media/midia/diagrama_ome8xv"
-            style="max-width:100%;">
-            
+
+            <img src="https://res.cloudinary.com/dxnc9l5cn/image/upload/v1/media/midia/diagrama_ome8xv"
+                 style="max-width:100%;">
+
             <p>
                 A modelação foi implementada no ficheiro <strong>models.py</strong>,
                 utilizando classes Django. Cada classe corresponde a uma tabela na
@@ -72,8 +74,9 @@
             <ul>
                 <li><strong>Frontend:</strong> HTML, CSS</li>
                 <li><strong>Backend:</strong> Python, Django</li>
-                <li><strong>Base de dados:</strong> SQLite</li>
-                <li><strong>Outros:</strong> Git, GitHub, Codespaces</li>
+                <li><strong>Base de dados:</strong> SQLite / Neon PostgreSQL</li>
+                <li><strong>Storage:</strong> Cloudinary</li>
+                <li><strong>Outros:</strong> Git, GitHub, Docker, Codespaces, GitHub Actions</li>
             </ul>
         </section>
 
@@ -93,7 +96,10 @@ Home
  ├── Tecnologias
  ├── Competências
  ├── Formações
- └── Sobre esta Aplicação
+ ├── Artigos
+ ├── Making Of
+ ├── Sobre esta Aplicação
+ └── Vídeo Tutoriais
 </pre>
         </section>
 
@@ -104,7 +110,8 @@ Home
                 O repositório do projeto encontra-se disponível online:
             </p>
 
-            <a href="https://github.com/Peter-Petrov-21407097/Portofolio1.2" target="_blank">
+            <a href="https://github.com/Peter-Petrov-21407097/portofolio1-2-docker"
+               target="_blank">
                 Ver no GitHub
             </a>
 
@@ -123,6 +130,54 @@ Home
             </p>
 
             <a href="{% url 'home' %}#makingof">Ver Making Of</a>
+        </section>
+
+        <section id="video-tutoriais">
+            <h2>Vídeo Tutoriais</h2>
+
+            <p>
+                Nesta secção encontram-se os videotutoriais desenvolvidos ao longo
+                da construção da aplicação web.
+            </p>
+
+            <h3>1. Desenvolvimento da Aplicação Django</h3>
+
+            <p>
+                Vídeo introdutório demonstrando o desenvolvimento inicial da aplicação
+                Django e organização do projeto.
+            </p>
+
+            <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/CiRrDdNEGu0"
+                title="Videotutorial Django"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+            <br><br>
+
+            <h3>2. Arquitetura do Sistema e Pipeline CI/CD</h3>
+
+            <p>
+                Explicação da arquitetura do sistema, ambiente de desenvolvimento,
+                produção, GitHub Actions, Neon PostgreSQL, Cloudinary e deployment.
+            </p>
+
+            <p><em>Vídeo em desenvolvimento.</em></p>
+
+            <br><br>
+
+            <h3>3. Developer em Ação</h3>
+
+            <p>
+                Demonstração completa da criação de um Codespaces, instalação do ambiente,
+                configuração do projeto, alteração de código e deploy automático.
+            </p>
+
+            <p><em>Vídeo em desenvolvimento.</em></p>
+
         </section>
 
     </main>
