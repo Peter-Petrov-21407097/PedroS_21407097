@@ -1,0 +1,107 @@
+{% extends "portfolio/base.html" %}
+{% load socialaccount %}
+{% load static %}
+
+{% block content %}
+
+<style>
+
+    .google-login-wrapper {
+
+        min-height: 80vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 40px;
+    }
+
+    .google-card {
+
+        background: #1b1b1b;
+
+        padding: 50px;
+
+        border-radius: 20px;
+
+        width: 100%;
+        max-width: 520px;
+
+        text-align: center;
+
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    .google-card h1 {
+
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+
+        color: #00ff99;
+    }
+
+    .google-card p {
+
+        color: #cccccc;
+
+        line-height: 1.7;
+
+        margin-bottom: 40px;
+    }
+
+    .google-btn {
+
+        background: linear-gradient(135deg, #00c853, #00e676);
+
+        color: black;
+
+        border: none;
+
+        padding: 16px 32px;
+
+        border-radius: 12px;
+
+        font-size: 1rem;
+
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition: 0.2s ease;
+    }
+
+    .google-btn:hover {
+
+        transform: translateY(-2px);
+
+        background: linear-gradient(135deg, #00e676, #69f0ae);
+    }
+
+</style>
+
+<div class="google-login-wrapper">
+
+    <div class="google-card">
+
+        <h1>Login com Google</h1>
+
+        <p>
+            Está prestes a autenticar-se utilizando a sua conta Google.
+        </p>
+
+        <form method="post">
+
+            {% csrf_token %}
+
+            <button type="submit" class="google-btn">
+                Continuar com Google
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

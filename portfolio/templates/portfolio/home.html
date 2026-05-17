@@ -1,3 +1,9 @@
+{% load socialaccount %}
+
+<a href="{% provider_login_url 'google' %}" class="google-home-btn">
+    Login com Google
+</a>
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt">
@@ -49,6 +55,13 @@
         </aside>
 
         <main class="main-content">
+
+        <a href="{% provider_login_url 'google' %}" class="google-home-btn">
+            Login com Google
+        </a>
+
+    <section class="content-section" id="licenciaturas">
+
             <section class="content-section" id="licenciaturas">
                 <div class="section-header">
                     <h2>Licenciaturas</h2>

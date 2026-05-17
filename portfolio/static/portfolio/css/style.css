@@ -207,3 +207,58 @@ body {
     background: linear-gradient(135deg, #00e676, #69f0ae);
     transform: translateX(3px);
 }
+
+.google-login-btn {
+    display: inline-block;
+
+    margin-bottom: 35px;
+    padding: 14px 28px;
+
+    background: #ffffff;
+    color: #000000;
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    transition: all 0.2s ease;
+}
+
+.google-login-btn:hover {
+    background: #1db954;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.google-home-btn {
+
+    display: inline-block;
+
+    margin-bottom: 60px;
+
+    padding: 14px 28px;
+
+    background: linear-gradient(135deg, #00c853, #00e676);
+
+    color: black;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    transition: 0.2s ease;
+}
+
+.google-home-btn:hover {
+
+    transform: translateY(-2px);
+
+    background: linear-gradient(135deg, #00e676, #69f0ae);
+}
