@@ -16,12 +16,16 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', cast=bool)
 
+
 ALLOWED_HOSTS = [
     'portofolio1-2.onrender.com',
     'localhost',
     '127.0.0.1',
-    'PedroS_21407097.pw.deisi.ulusofona.pt',
+
+    'pedros_21407097.pw.deisi.ulusofona.pt',
+    'pedros-21407097.pw.deisi.ulusofona.pt',
 ]
+
 
 SITE_ID = 1
 
