@@ -18,16 +18,13 @@ DEBUG = config('DEBUG', cast=bool)
 
 
 ALLOWED_HOSTS = [
-    'portofolio1-2.onrender.com',
     'localhost',
     '127.0.0.1',
-
-    'pedros_21407097.pw.deisi.ulusofona.pt',
-    'peter-petrov-21407097.pw.deisi.ulusofona.pt',
+    'peter.pw.deisi.ulusofona.pt',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://peter-petrov-21407097.pw.deisi.ulusofona.pt',
+    'https://peter.pw.deisi.ulusofona.pt',
 ]
 
 
