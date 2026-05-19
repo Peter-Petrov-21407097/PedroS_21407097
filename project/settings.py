@@ -27,7 +27,6 @@ CSRF_TRUSTED_ORIGINS = [
     'https://peter.pw.deisi.ulusofona.pt',
 ]
 
-
 SITE_ID = 1
 
 INSTALLED_APPS = [
